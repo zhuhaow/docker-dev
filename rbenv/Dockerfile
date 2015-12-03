@@ -10,3 +10,4 @@ RUN git clone https://github.com/sstephenson/ruby-build.git /root/.rbenv/plugins
 RUN sed -i 's/)/ rbenv)/g' /root/.zshrc
 
 ENV CONFIGURE_OPTS --disable-install-doc
+ENV PATH /root/.rbenv/bin:$PATH
