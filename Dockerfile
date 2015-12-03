@@ -3,7 +3,7 @@ MAINTAINER Zhuhaow Wang <zhuhaow@gmail.com>
 
 ENV HOME /root
 
-# only run this in China, comment the following line otherwise
+# only run this in China, comment out the following line otherwise
 # RUN sed -i 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//http:\/\/mirrors\.163\.com\/ubuntu\//g' /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
